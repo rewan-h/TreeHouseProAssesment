@@ -1,4 +1,3 @@
-
 body{ /* Make all content go to edge of page*/
     margin: 0px;
 }
@@ -9,36 +8,43 @@ body{ /* Make all content go to edge of page*/
     display: flex;
 
 }
-#navbuttons{
+#navbuttons{ /* Place holder ignore pls */
     background-color: red;
     height: 75%;
     width: 50%;
     align-self: center;
 }
-#logo{
-    background-color: red;
+#logo{ /* Logo styling */
+    background-image: url(images/TreeHousePro_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 60px;
-    width: 60px;
+    width: 200px;
     align-self: center;
     margin: 20px;
 } /* End of Navbar Styling */
 
-#heroImage {
-    background-color: rgb(222, 222, 222);
-    height: 400px;
+#heroImage { /*Hero image styling */
+    background-image: url(images/hero_image.jpg);
+    background-size: cover;   
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 750px;
     display: flex;
     align-items: center;
     justify-content: center;
+
     
 }
 #heroImage h1 {
     margin: 0px;
-    transform: translateY(-100px);
+    transform: translateY(-200px);
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
+    color: white;
+    font-size: 100px;
 
-}
+} /* End of hero image styling */
 
 #contentBox1, #contentBox2{
     display: flex;
@@ -48,7 +54,6 @@ body{ /* Make all content go to edge of page*/
 #contentBox2 div{
     text-align: right;
 }
-
 #image1, #image2 {
     background-color: gray;
     margin-left: 100px;
@@ -59,6 +64,62 @@ body{ /* Make all content go to edge of page*/
     margin-left: 30px;
     margin-right: 100px;
 }
+#textArea1 ,#textArea2{
+    width: 50%;
+}
+
+#carouselImagesContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;      
+}
+#carouselImagesContainer button{
+    margin: 0px 20px;
+}
+
+#carouselImages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;   
+}
+#carouselText{
+    background-color: rgb(221, 221, 221);
+    border-radius: 10px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;   
+} 
+
+#carouselImg1{background-image: url(images/fantasy_treehouse.jpg);}
+#carouselImg2{background-image: url(images/grown_up_treehouse.jpg);}
+#carouselImg3{background-image: url(images/modern_treehouse.jpg);}
+#carouselImg4{background-image: url(images/rustic_treehouse.jpg);}
+
+.carouselImg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    aspect-ratio: 1/1;
+
+    opacity: 0.6;
+    margin: 0px 20px;
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1);
+}
+.carouselImg.selected{
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+
+
 
 footer {
     background-color: gray;
