@@ -99,8 +99,18 @@ body{ /* Make all content go to edge of page*/
 
 #carouselImg1{background-image: url(images/fantasy_treehouse.jpg);}
 #carouselImg2{background-image: url(images/grown_up_treehouse.jpg);}
-#carouselImg3{background-image: url(images/modern_treehouse.jpg);}
+#carouselImg3{background-image: url(images/modern_treehouse.jpg); background-position: 70% 30%;} /*Recentering the image as its offset weirdly*/
 #carouselImg4{background-image: url(images/rustic_treehouse.jpg);}
+
+#buttonLeft, #buttonRight {
+    width: 50px;
+    aspect-ratio: 1/1;
+
+    font-size: 35px;
+
+    border-radius: 50%;
+    border-width: 1px;
+}
 
 .carouselImg{
     background-size: cover;
