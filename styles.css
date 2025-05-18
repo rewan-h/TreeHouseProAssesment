@@ -47,13 +47,22 @@ body{ /* Make all content go to edge of page*/
 } /* End of hero image styling */
 
 #contentBox1, #contentBox2{
-    display: flex;
+    display: flex; /* Initial styling for aligning content */
     align-items: center;
-}
 
+    background-color: rgb(175, 175, 175); /* Styling the actual box */
+    border-radius: 10px;
+    margin: 5%;
+    padding: 2%;
+
+
+}
 #contentBox2 div{
     text-align: right;
 }
+
+
+
 #image1, #image2 {
     background-color: gray;
     margin-left: 100px;
