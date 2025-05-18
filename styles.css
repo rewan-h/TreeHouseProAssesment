@@ -80,14 +80,21 @@ body{ /* Make all content go to edge of page*/
 
 
 
-#image1, #image2 {
-    background-color: gray;
-    margin-left: 100px;
-    height: 100px;
+#image1{
+    background-image: url(images/building-2762241_1920.jpg);
+    background-size: cover;
+    background-position: 0px -50px;
+    height: 300px;
     width: 50%;
+
+
 }
 #image2{
-    margin-left: 30px;
+    background-image: url(images/tree-1496362_1280.jpg);
+    background-size: cover;
+    background-position: 0px -50px;
+    height: 300px;
+    width: 50%;
     margin-right: 100px;
 }
 #textArea1 ,#textArea2{
@@ -143,9 +150,6 @@ body{ /* Make all content go to edge of page*/
     transform: scale(1.2);
     opacity: 1;
 }
-
-
-
 
 footer {
     background-color: gray;
