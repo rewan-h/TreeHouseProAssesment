@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const carouselTitles = ["Fantasy treehouse", "Grown-up treehouse", "Modern treehouse","Rustic treehouse"];
   const carouselDesc = ["This cosy treehouse is made from high quality weather-proof materials.", "Description 2", "Description 3"," Description 4"];
-  const carouselPrices = ["Price 1", "Price 2", "Price 3"," Price 4"];
 
   const carousel = document.getElementById('carousel');
 
@@ -17,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     currentIndex = Math.min(currentIndex + 1,3);
     carousel.querySelector('#carouselTitle').innerText = carouselTitles[currentIndex];
     carousel.querySelector('#carouselDesc').innerText = carouselDesc[currentIndex];
-    carousel.querySelector('#carouselPrice').innerText = carouselPrices[currentIndex];
     
     carousel.querySelector('#carouselImg'.concat(currentIndex+1)).classList.add('selected');
   });
@@ -26,8 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     currentIndex = Math.max(currentIndex - 1,0);
     carousel.querySelector('#carouselTitle').innerText = carouselTitles[currentIndex];
     carousel.querySelector('#carouselDesc').innerText = carouselDesc[currentIndex];
-    carousel.querySelector('#carouselPrice').innerText = carouselPrices[currentIndex];
-
+    
     carousel.querySelector('#carouselImg'.concat(currentIndex+1)).classList.add('selected');
   });
 });
