@@ -9,11 +9,24 @@ body{ /* Make all content go to edge of page*/
 
 }
 #navbuttons{ /* Place holder ignore pls */
-    background-color: red;
-    height: 75%;
-    width: 50%;
     align-self: center;
+    align-items: center;
 }
+#homeButton, #aboutButton{
+    background-color: rgb(204, 204, 204);
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 15px;
+    margin: 4px;
+    cursor: pointer; /* Used to make the user know that they can click */
+}
+
+
+
 #logo{ /* Logo styling */
     background-image: url(images/TreeHousePro_logo.png);
     background-size: contain;
@@ -46,22 +59,55 @@ body{ /* Make all content go to edge of page*/
 
 } /* End of hero image styling */
 
-#contentBox1, #contentBox2{
-    display: flex;
+#aboutTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+
+    text-align: center;
+}
+
+#contentBox1, #contentBox2{ /* Content box styling */
+    display: flex; /* Initial styling for aligning content */
     align-items: center;
+
+    background-color: rgb(175, 175, 175); /* Styling the actual box */
+    border-radius: 10px;
+    margin: 5%;
+    padding: 2%;
+}
+#contentBox1 h1, #contentBox2 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin: 0px;   
+}
+#contentBox1 p, #contentBox2 p{
+    font-family: Arial, Helvetica, sans-serif; 
+}
+#contentBox1 {
+    margin-top: 0px;
 }
 
 #contentBox2 div{
     text-align: right;
-}
-#image1, #image2 {
-    background-color: gray;
-    margin-left: 100px;
-    height: 100px;
+} /* End of content box styling */
+
+
+
+#image1{
+    background-image: url(images/building-2762241_1920.jpg);
+    background-size: cover;
+    background-position: 0px -50px;
+    height: 300px;
     width: 50%;
+
+
 }
 #image2{
-    margin-left: 30px;
+    background-image: url(images/tree-1496362_1280.jpg);
+    background-size: cover;
+    background-position: 0px -50px;
+    height: 300px;
+    width: 50%;
     margin-right: 100px;
 }
 #textArea1 ,#textArea2{
@@ -128,13 +174,11 @@ body{ /* Make all content go to edge of page*/
     opacity: 1;
 }
 
-
-
-
 footer {
     background-color: gray;
     padding: 20px;
 }
 footer p {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
 }
