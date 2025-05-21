@@ -2,8 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const buttonLeft = document.getElementById('buttonLeft');
   const buttonRight = document.getElementById('buttonRight');
 
-  const carouselTitles = ["Fantasy treehouse", "Grown-up treehouse", "Modern treehouse","Rustic treehouse"];
-  const carouselDesc = ["This cosy treehouse is made from high quality weather-proof materials.", "Description 2", "Description 3"," Description 4"];
+  const carouselTitles = ["Fantasy treehouse", "Grown-up treehouse", "Modern treehouse", "Rustic treehouse"];
+  const carouselDesc = [
+    "Weather-proof, lockable, over 10m2, built in large sturdy tree.",
+    "Cabin-like, insulated, up to 50m2, suitable for year-round living.",
+    "Dressed timber, skirting, balcony optional, built in sturdy trees.",
+    "Rough-sawn timber, under 5m2, with roof and stairs or ladder."
+  ];
 
   const carousel = document.getElementById('carousel');
 

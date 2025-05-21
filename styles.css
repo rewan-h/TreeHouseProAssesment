@@ -12,6 +12,20 @@ body{ /* Make all content go to edge of page*/
     align-self: center;
     align-items: center;
 }
+
+#homeButton, #aboutButton{
+    background-color: rgb(204, 204, 204);
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 15px;
+    margin: 4px;
+    cursor: pointer; /* Used to make the user know that they can click */
+}
+
 #logo{ /* Logo styling */
     background-image: url(images/TreeHousePro_logo.png);
     background-size: contain;
@@ -31,6 +45,8 @@ body{ /* Make all content go to edge of page*/
     display: flex;
     align-items: center;
     justify-content: center;
+
+    margin-bottom: 40px;
 
     
 }
@@ -82,6 +98,7 @@ body{ /* Make all content go to edge of page*/
     background-image: url(images/building-2762241_1920.jpg);
     background-size: cover;
     background-position: 0px -50px;
+    background-repeat: no-repeat;
     height: 300px;
     width: 50%;
 
@@ -91,6 +108,7 @@ body{ /* Make all content go to edge of page*/
     background-image: url(images/tree-1496362_1280.jpg);
     background-size: cover;
     background-position: 0px -50px;
+    background-repeat: no-repeat;
     height: 300px;
     width: 50%;
     margin-right: 100px;
@@ -107,6 +125,12 @@ body{ /* Make all content go to edge of page*/
 }
 #carouselImagesContainer button{
     margin: 0px 20px;
+    
+    font-size: 25px;
+
+    border-radius: 50%;
+    border: solid;
+    aspect-ratio: 1/1;
 }
 
 #carouselImages{
@@ -116,6 +140,8 @@ body{ /* Make all content go to edge of page*/
     margin-top: 50px;   
 }
 #carouselText{
+    font-family: Arial, Helvetica, sans-serif;
+
     background-color: rgb(221, 221, 221);
     border-radius: 10px;
     border-color: gray;
@@ -133,18 +159,7 @@ body{ /* Make all content go to edge of page*/
 #carouselImg3{background-image: url(images/modern_treehouse.jpg); background-position: 70% 30%;} /*Recentering the image as its offset weirdly*/
 #carouselImg4{background-image: url(images/rustic_treehouse.jpg);}
 
-#homeButton, #aboutButton{
-    background-color: rgb(204, 204, 204);
-    border: none;
-    border-radius: 5px;
 
-    color: white;
-    padding: 15px 25px;
-    text-align: center;
-    font-size: 15px;
-    margin: 4px;
-    cursor: pointer; /* Used to make the user know that they can click */
-}
 
 .carouselImg{
     background-size: cover;
@@ -160,6 +175,34 @@ body{ /* Make all content go to edge of page*/
 .carouselImg.selected{
     transform: scale(1.2);
     opacity: 1;
+}
+
+#infoButtons{
+    margin: 0px 20px;
+    justify-content: center;
+    align-items: center;  
+}
+#infoButtons button{
+    border-radius: 5px;
+
+    color: rgb(0, 0, 0);
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 15px;
+    margin: 4px;
+    cursor: pointer; /* Used to make the user know that they can click */
+}
+#quoteButton {
+    background-color: rgb(20, 255, 20);
+    border: solid;
+    border-width: 3px;
+    border-color: rgb(20, 225, 20);
+}
+#moreInfoButton {
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    border-width: 3px;
+    border-color: rgb(20, 225, 20);
 }
 
 footer {
