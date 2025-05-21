@@ -125,12 +125,19 @@ body{ /* Make all content go to edge of page*/
 }
 #carouselImagesContainer button{
     margin: 0px 20px;
-    
+
     font-size: 25px;
+
+    background-color: white;
 
     border-radius: 50%;
     border: solid;
+    border-width: 2px;
+    border-color: rgb(20, 225, 20);
+
     aspect-ratio: 1/1;
+
+    cursor: pointer; /* Used to make the user know that they can click */
 }
 
 #carouselImages{
@@ -140,6 +147,8 @@ body{ /* Make all content go to edge of page*/
     margin-top: 50px;   
 }
 #carouselText{
+    margin: 50px;
+
     font-family: Arial, Helvetica, sans-serif;
 
     background-color: rgb(221, 221, 221);
@@ -171,6 +180,7 @@ body{ /* Make all content go to edge of page*/
     margin: 0px 20px;
     transition: transform 0.5s ease-in-out;
     transform: scale(1);
+    border-radius: 3px;
 }
 .carouselImg.selected{
     transform: scale(1.2);
