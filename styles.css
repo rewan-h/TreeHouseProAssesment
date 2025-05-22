@@ -14,6 +14,7 @@ body{ /* Make all content go to edge of page*/
 }
 
 #homeButton, #aboutButton{
+    /* Navigation buttons */
     background-color: rgb(204, 204, 204);
     border: none;
     border-radius: 5px;
@@ -39,10 +40,10 @@ body{ /* Make all content go to edge of page*/
 #heroImage { /*Hero image styling */
     background-image: url(images/hero_image.jpg);
     background-size: cover;   
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 750px;
-    display: flex;
+    background-repeat: no-repeat; /* No repeat to make sure the image does not repeat */
+    background-position: center; /* Centering the image */
+    height: 750px; /* Height of the image */
+    display: flex; 
     align-items: center;
     justify-content: center;
 
@@ -77,24 +78,18 @@ body{ /* Make all content go to edge of page*/
     padding: 2%;
 }
 #contentBox1 h1, #contentBox2 h1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* Font family for the text */
     font-size: 50px;
     margin: 0px;   
 }
 #contentBox1 p, #contentBox2 p{
-    font-family: Arial, Helvetica, sans-serif; 
-}
-#contentBox1 {
-    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif; /* Font family for the text */
 }
 
 #contentBox2 div{
     text-align: right;
-} /* End of content box styling */
-
-
-
-#image1{
+} 
+#image1{ 
     background-image: url(images/building-2762241_1920.jpg);
     background-size: cover;
     background-position: 0px -50px;
@@ -113,9 +108,12 @@ body{ /* Make all content go to edge of page*/
     width: 50%;
     margin-right: 100px;
 }
-#textArea1 ,#textArea2{
+#textArea1 ,#textArea2{ /* Ensure text area is roughly the same size as image */
     width: 50%;
 }
+/* End of content box styling */
+
+
 
 #carouselImagesContainer{
     display: flex;
@@ -123,7 +121,7 @@ body{ /* Make all content go to edge of page*/
     align-items: center;
     margin-top: 50px;      
 }
-#carouselImagesContainer button{
+#carouselImagesContainer button{ /* Carousel button styling */
     margin: 0px 20px;
 
     font-size: 25px;
@@ -140,13 +138,13 @@ body{ /* Make all content go to edge of page*/
     cursor: pointer; /* Used to make the user know that they can click */
 }
 
-#carouselImages{
+#carouselImages{ /* Carousel image styling */
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 50px;   
 }
-#carouselText{
+#carouselText{ /* Carousel text styling */
     margin: 50px;
 
     font-family: Arial, Helvetica, sans-serif;
@@ -163,6 +161,8 @@ body{ /* Make all content go to edge of page*/
     margin-top: 50px;   
 } 
 
+
+/* Setting the background images for the carousel, cant use class for this (I think?)*/
 #carouselImg1{background-image: url(images/fantasy_treehouse.jpg);}
 #carouselImg2{background-image: url(images/grown_up_treehouse.jpg);}
 #carouselImg3{background-image: url(images/modern_treehouse.jpg); background-position: 70% 30%;} /*Recentering the image as its offset weirdly*/
@@ -170,7 +170,7 @@ body{ /* Make all content go to edge of page*/
 
 
 
-.carouselImg{
+.carouselImg{ /* Sets style for all images in the carousel */
     background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
@@ -182,17 +182,17 @@ body{ /* Make all content go to edge of page*/
     transform: scale(1);
     border-radius: 3px;
 }
-.carouselImg.selected{
+.carouselImg.selected{ /* Sets style for the animation of the selected image in the carousel */
     transform: scale(1.2);
     opacity: 1;
 }
 
-#infoButtons{
+#infoButtons{ /* Info button alignment */
     margin: 0px 20px;
     justify-content: center;
     align-items: center;  
 }
-#infoButtons button{
+#infoButtons button{ /* General info button styling */
     border-radius: 5px;
 
     color: rgb(0, 0, 0);
@@ -202,24 +202,26 @@ body{ /* Make all content go to edge of page*/
     margin: 4px;
     cursor: pointer; /* Used to make the user know that they can click */
 }
-#quoteButton {
+#quoteButton { /* Quote button styling */
     background-color: rgb(20, 255, 20);
     border: solid;
     border-width: 3px;
     border-color: rgb(20, 225, 20);
 }
-#moreInfoButton {
+#moreInfoButton { /* More info button styling */
     background-color: rgb(255, 255, 255);
     border: solid;
     border-width: 3px;
     border-color: rgb(20, 225, 20);
 }
 
-footer {
+footer { /* Footer styling */
     background-color: gray;
     padding: 20px;
 }
-footer p {
+footer p { /* Footer text styling */
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
 }
+
+/* I would put credits here but I already did that */
