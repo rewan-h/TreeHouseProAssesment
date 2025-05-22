@@ -1,12 +1,22 @@
+:root { /* Le colour pallet */
+  --gray: #7d7d7d;
+  --light-gray: #cfcfcf;
+  --medium-gray: #afafaf;
+  --lighter-gray: #dddddd;
+  --white: #f9f9f9; /* A less bright white */
+  --black: #000000;
+  --green-bright: #19d619;
+  --green-light: #15e615;
+}
+
 body{ /* Make all content go to edge of page*/
     margin: 0px;
 }
 
 #navbar { /* Navbar styling */
-    background-color: gray;
+    background-color: var(--gray);
     height: 75px;
     display: flex;
-
 }
 #navbuttons{ /* Centering the buttons */
     align-self: center;
@@ -15,11 +25,11 @@ body{ /* Make all content go to edge of page*/
 
 #homeButton, #aboutButton{
     /* Navigation buttons */
-    background-color: rgb(204, 204, 204);
+    background-color: var(--light-gray);
     border: none;
     border-radius: 5px;
 
-    color: white;
+    color: var(--white);
     padding: 15px 25px;
     text-align: center;
     font-size: 15px;
@@ -56,7 +66,7 @@ body{ /* Make all content go to edge of page*/
     transform: translateY(-200px);
 
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: var(--white);
     font-size: 100px;
 
 } /* End of hero image styling */
@@ -72,7 +82,7 @@ body{ /* Make all content go to edge of page*/
     display: flex; /* Initial styling for aligning content */
     align-items: center;
 
-    background-color: rgb(175, 175, 175); /* Styling the actual box */
+    background-color: var(--medium-gray); /* Styling the actual box */
     border-radius: 10px;
     margin: 5%;
     padding: 2%;
@@ -126,12 +136,12 @@ body{ /* Make all content go to edge of page*/
 
     font-size: 25px;
 
-    background-color: white;
+    background-color: var(--white);
 
     border-radius: 50%;
     border: solid;
     border-width: 2px;
-    border-color: rgb(20, 225, 20);
+    border-color: var(--green-bright);
 
     aspect-ratio: 1/1;
 
@@ -149,9 +159,9 @@ body{ /* Make all content go to edge of page*/
 
     font-family: Arial, Helvetica, sans-serif;
 
-    background-color: rgb(221, 221, 221);
+    background-color: var(--lighter-gray);
     border-radius: 10px;
-    border-color: gray;
+    border-color: var(--gray);
     border-style: solid;
     border-width: 2px;
     margin-bottom: 50px;
@@ -195,7 +205,7 @@ body{ /* Make all content go to edge of page*/
 #infoButtons button{ /* General info button styling */
     border-radius: 5px;
 
-    color: rgb(0, 0, 0);
+    color: var(--black);
     padding: 15px 25px;
     text-align: center;
     font-size: 15px;
@@ -203,20 +213,20 @@ body{ /* Make all content go to edge of page*/
     cursor: pointer; /* Used to make the user know that they can click */
 }
 #quoteButton { /* Quote button styling */
-    background-color: rgb(20, 255, 20);
+    background-color: var(--green-light);
     border: solid;
     border-width: 3px;
-    border-color: rgb(20, 225, 20);
+    border-color: var(--green-bright);
 }
 #moreInfoButton { /* More info button styling */
-    background-color: rgb(255, 255, 255);
+    background-color: var(--white);
     border: solid;
     border-width: 3px;
-    border-color: rgb(20, 225, 20);
+    border-color: var(--green-bright);
 }
 
 footer { /* Footer styling */
-    background-color: gray;
+    background-color: var(--gray);
     padding: 20px;
 }
 footer p { /* Footer text styling */
