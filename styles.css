@@ -11,6 +11,10 @@
 
 body{ /* Make all content go to edge of page*/
     margin: 0px;
+    background-color: var(--gray);
+}
+#backgroundColour{ /* Should be the background color of the visible page*/
+    background-color: var(--white);
 }
 
 #navbar { /* Navbar styling */
